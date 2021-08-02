@@ -10,3 +10,6 @@ function livePreview() {
   // Appel de la fonction lors d'un événement 'keyup'.
   inputText.addEventListener('keyup', livePreview);
 
+// On pré-rempli #user-input avec le contenu de #contenuHTML, pour donner
+// un exemple à l'utilisateur dès que la page se charge.
+inputText.value = contenuHTML.innerHTML;
