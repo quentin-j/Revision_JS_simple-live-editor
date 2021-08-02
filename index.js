@@ -6,3 +6,7 @@ let contenuHTML = document.querySelector('#contenu-html');
 function livePreview() {
     contenuHTML.innerHTML = inputText.value;    // pour plus d'info sur innerHTML il y ce lien : https://developer.mozilla.org/fr/docs/Web/API/Element/innerHTML
   }
+
+  // Appel de la fonction lors d'un événement 'keyup'.
+  inputText.addEventListener('keyup', livePreview);
+
